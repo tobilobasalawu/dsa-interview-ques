@@ -74,7 +74,7 @@ def find_student_grade(students, grades, search_student):
 for i, test_case in enumerate(test_cases):
     result = find_student_grade(**test_case['input'])
     expected = test_case['output']
-    print('Passed ✅') if result == expected else print('Failed ❌')
+    print('Passed') if result == expected else print('Failed')
 
 
 
