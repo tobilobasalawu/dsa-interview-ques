@@ -22,7 +22,7 @@ test_cases = [
     {
         'input' : {
             'students' : ["Alice", "Bob", "Charlie", "David", "Eve"],
-            'grades' : [85, 92, 78, 90, 88],
+            'grades' : [90, 672, 78, 990, 688],
             'search_student' : "Charlie"
         }, 'output' : 78
     },
@@ -74,7 +74,7 @@ def find_student_grade(students, grades, search_student):
 for i, test_case in enumerate(test_cases):
     result = find_student_grade(**test_case['input'])
     expected = test_case['output']
-    print('Passed') if result == expected else print('Failed')
+    print('Passed ✅') if result == expected else print('Failed ❌')
 
 
 
